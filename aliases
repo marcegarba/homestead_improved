@@ -1,8 +1,12 @@
-alias ..="cd .."
-alias ...="cd ../.."
-
-alias h='cd ~'
-alias c='clear'
+alias 'cd...'="cd ../.."
+alias 'cd..'="cd .."
+alias gpfp='git pull --ff-only -p'
+alias grep='grep --color'
+alias http='TERM=xterm-256color http -s bw'
+alias lc='ls -C'
+alias l='ls -l'
+alias ls='ls --color=yes'
+alias sqlite3='sqlite3 -column -header'
 
 function serve() {
 	if [[ "$1" && "$2" ]]
